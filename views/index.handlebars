@@ -2,10 +2,10 @@
 
 <html>
 <head>
-	<title>My HCI Friends</title>	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+    <title>Note It!</title>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,50 +15,42 @@
     <![endif]-->   
 
     <!-- Import in the CSS script files -->
-	<link href="/css/bootstrap.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.css" rel="stylesheet">
-	<link href="/css/noteitucsd.css" rel="stylesheet"> 
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/css/noteitucsd.css" rel="stylesheet"> 
+
 </head>
 
 <body>
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-		    <!-- Brand and sign in get grouped for better mobile display -->
-		    <div class="navbar-header">
-		    	<a class="navbar-brand" href="/">NoteIt!</a>
-		    	<a href="/login">
-		    		<button type="button" class="btn btn-default navbar-btn">Sign in</button></a>
-    		</div>      		
-      	</div><!-- /.container-fluid -->
-      </nav>
+    <nav class="navbar navbar-default">
+        <div class="nav1">
+            &nbsp;NoteIt!&nbsp;
+            <a href="/make_account">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-edit"></span> Register
+                </button>
+            </a>
+        </div>
+    </nav>
 
-	<div class = "container">
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		<h4><center>NOTE IT!</h4>
-		<h5><center> A Collaborative Note-Taking App By Students, For Students</h5>
+    <div class = "container">
+        <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+        <!-- p means paragraph -->
+        
+            <h1>NoteIt</h1>
+            <h4>A Collaborative Note-Taking App</h4>
+            <h5><i>"By Students, For Students"</i></h5>
+        
 
-		<IMG SRC="images/tritons.png" ALT="UCSD_Logo" WIDTH=100 HEIGHT=150 >
+        <img SRC="images/tritons.png" ALT="UCSD_Logo" WIDTH=75 HEIGHT=113>
+        <hr>
+        <a href="/classes" id="classes" class="btn btn-primary btn-lg btn-block active" role="button">Find Notes</a>
 
-		<hr>
-
-		<div class="button" id="classes">
-			<a href="/classes" class = "thumbnail">
-				<p>Find Notes</p>
-			</a>
-		</div>
-		<div class="button" id="new_account">
-			<a href="/make_account" class = "thumbnail">
-				<p>Make an Acount</p>
-			</a>
-		</div>
-
-		<!-- Importing the JS scripts here for the project -->
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="/js/jquery-1.11.0.js"></script>
-		<script src="/js/bootstrap.js"></script>
-		<script src="/js/noteitucsd.js"></script>
-	</div>
+        <a href="/login" id="new_account" class="btn btn-primary btn-lg btn-block active" role="button">Login</a>
+    </div>
+        <!-- Importing the JS scripts here for the project -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="/js/bootstrap.js"></script>
+        <script src="/js/noteitucsd.js"></script>
 </body>
 </html>

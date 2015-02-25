@@ -10,7 +10,7 @@
 	<link href="/css/bootstrap.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.css" rel="stylesheet">
 	<link href="/css/noteitucsd.css" rel="stylesheet"> 
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -20,36 +20,43 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->        
 </head>
-
+      
 <body>
 	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-		    <!-- Brand and sign in get grouped for better mobile display -->
-		    <div class="navbar-header">
-		    	<a onclick="history.go(-1)">
-		    		<button type="button" class="btn btn-default navbar-btn">Back</button></a>
-    		</div>      		
-      	</div><!-- /.container-fluid -->
-      </nav>
+        <div class="nav1">
+            <a onclick="history.go(-1)">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-chevron-left">
+                    </span>
+                </button>
+            </a>
+            <a href="/">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-home">
+                    </span>
+                </button>
+            </a>
+            &nbsp; NoteIt!
+        </div>
+    </nav>
 
-	<div class="container">
-		<form>
-			Username:<br>
-			<input type="text" name="username"><br>
-			Password:<br>
-			<input type="text" name="password"><br>
-		</form>
 
-		<br>
+    <form class="container">
+        <h2>Login</h2>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
 
-		<div class="button" id="login">
-			<a href="/" class="thumbnail">Login!</a>
-		</div>
-	</div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password">
+        </div>
+
+        <a href="/welcome" id="login" class="btn btn-primary btn-lg btn-block active" role="button">Login</a>
+    </form>
+
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="/js/jquery-1.11.0.js"></script>
 		<script src="/js/bootstrap.js"></script>
 		<script src="/js/noteitucsd.js"></script>
 </body>

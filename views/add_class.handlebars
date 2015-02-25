@@ -41,12 +41,27 @@
     </nav>
 
     <div class="container">
-        <h3><center>Upload Notes</h3>
-        <hr></hr>
-        <center><input type="file" accept="image/*">
-        <hr></hr>
-        <a href="/done" id="upload_now" class="btn btn-primary btn-lg btn-block active" role="button">Upload</a>
+        <form id="addClassForm" role="form" method="get" action="/done_addclass">
+            <h3>Add a class</h3>
+            <div class="form-group">
+              <input type="text" class="form-control" id="department" placeholder="Department (i.e CSE, MGT)" name="department">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="code" placeholder="Code (i.e. 110, 20C)" name="code">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="year" placeholder="Year" name="year">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="quarter" placeholder="Quarter (i.e FA, WI)" name="quarter">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="professor" placeholder="Professor (Last, First)" name="professor">
+            </div>
+            <input type="submit" id="submitBtn" class="btn btn-primary btn-lg btn-block active" value="Add Class!"></input>
+        </form>
     </div>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="/js/bootstrap.js"></script>

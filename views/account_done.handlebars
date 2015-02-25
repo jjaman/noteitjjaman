@@ -9,8 +9,7 @@
 	<!-- Bootstrap -->
 	<link href="/css/bootstrap.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.css" rel="stylesheet">
-	<link href="/css/noteitucsd.css" rel="stylesheet"> 
-
+	<link href="/css/noteitucsd.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -41,26 +40,16 @@
 	</nav>
 
 	<div class="container">
-		<h3><center>Select Class</h3>
-	    {{#each Classes}}
-	      <div class="list-group">
-	      	<a href="/{{department}} {{code}} for {{quarter}} {{year}} by {{professor}}/notes" class="list-group-item">{{department}} {{code}} {{professor}} {{quarter}} {{year}} </a>
-	      </div>
-	    {{/each}}
+		<h3><center>You are successfully registered!</h3>
 
-        <a href="/add_class" id="classes" class="btn btn-primary btn-lg btn-block active" role="button">Add Class</a>
+		<a href="/" id="classes" class="btn btn-primary btn-lg btn-block active" role="button">Back to Homepage</a>
 
-    </div>  
-		<!-- <div class="list-group">
-			<a href="/course_ID" class="list-group-item">COGS</a>
-	  		<a href="/course_ID" class="list-group-item">CSE</a>
-	  		<a href="/course_ID" class="list-group-item">ECE</a>
-		</div> -->
-	
+		<a href="/classes" id="classes" class="btn btn-primary btn-lg btn-block active" role="button">Start uploading!</a>
+	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.js"></script>
 	<script src="/js/noteitucsd.js"></script>
 </body>
-</html>
+		</html>

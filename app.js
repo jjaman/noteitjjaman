@@ -8,18 +8,21 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
+
 var index = require('./routes/index');
 var classes = require('./routes/classes');
-var course_ID = require('./routes/course_ID');
 var done = require('./routes/done');
 var login = require('./routes/login');
 var make_account = require('./routes/make_account');
 var notes = require('./routes/notes');
-var professor = require('./routes/professor');
-var udder_quarters = require('./routes/udder_quarters');
 var upload = require('./routes/upload');
+var account = require('./routes/accounts');
+var add_class = require('./routes/add_class');
+var welcome = require('./routes/welcome');
+var done_class = require('./routes/done_addclass');
 // Example route
 // var user = require('./routes/user');
+
 
 var app = express();
 
@@ -46,14 +49,15 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/classes', classes.view);
-app.get('/course_ID', course_ID.view);
 app.get('/done', done.view);
 app.get('/login', login.view);
 app.get('/make_account', make_account.view);
-app.get('/notes', notes.view);
-app.get('/professor', professor.view);
-app.get('/udder_quarters', udder_quarters.view);
+app.get('/:display/notes', notes.view);
 app.get('/upload', upload.view);
+app.get('/account_done', account.addAccount);
+app.get('/add_class', add_class.view);
+app.get('/welcome', welcome.view);
+app.get('/done_addclass', add_class.addClass);
 // Example route
 // app.get('/users', user.list);
 
